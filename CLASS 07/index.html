@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo Class | Elements</title>
+  </head>
+  <body>
+    <style>
+      /* a:link {
+        color: #15e43e;
+      }
+
+      a:visited {
+        color: #d400ff;
+      }
+
+      a:hover {
+        color: #360dbc;
+      } */
+
+      /* p:hover {
+        font-size: 23px;
+        color: red;
+        cursor: pointer;
+      } */
+
+      /* a {
+        color: red;
+      } */
+      /* li:first-child {
+        color: #d400ff;
+        font-size: 30px;
+        list-style: none;
+      }
+
+      li:last-child {
+        color: #360dbc;
+        font-size: 40px;
+      }
+
+      li:nth-child(4) {
+        color: #360dbc;
+        font-size: 40px;
+      } */
+
+      li:nth-child(even) {
+        color: #d400ff;
+      }
+
+      li:nth-child(odd) {
+        color: #15e43e;
+      }
+
+      /* .flex-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      } */
+
+      .box {
+        width: 200px;
+      }
+
+      .box:nth-child(odd) {
+        background-color: aquamarine;
+        padding: 10px;
+      }
+
+      .box:nth-child(even) {
+        background-color: rgb(65, 147, 120);
+        padding: 10px;
+      }
+
+      /* .apple {
+        color: green;
+      } */
+
+      /* p::first-letter {
+        font-size: 30px;
+        color: red;
+      }
+
+      p::first-line {
+        color: crimson;
+      }
+
+      ::selection {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      } */
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+      }
+
+      .flex-container > * {
+        flex-basis: 100%;
+      }
+
+      .img img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+        /* opacity: 1; */
+      }
+
+      ::marker {
+        font-size: 30px;
+        color: red;
+      }
+
+      .content h2 {
+        font-size: 48px;
+        position: relative;
+      }
+
+      .content h2::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+        background-image: url("https://www.freepnglogos.com/uploads/star-png/star-alt-icon-small-flat-iconset-paomedia-13.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -20%;
+        right: 1%;
+        z-index: -1;
+      }
+
+      .heading-underline {
+        position: relative;
+      }
+
+      .heading-underline::after {
+        content: "";
+        width: 100%;
+        height: 10px;
+        background-color: red;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        z-index: -1;
+        opacity: 0.5;
+      }
+    </style>
+    <section class="container">
+      <div class="flex-container">
+        <div class="content">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            <span class="heading-underline">recusandae.</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos quas est recusandae quasi a magnam iure, consectetur
+            fuga temporibus dolorem obcaecati quia atque ad? Tempore sed error
+            deserunt voluptatem enim.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="img">
+          <img
+            src="https://images.unsplash.com/photo-1682167176169-c74f2a6c6b84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1616&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <div>
+      <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Guava</li>
+        <li>Lichi</li>
+        <li>Apple</li>
+      </ul>
+      <div class="flex-container">
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="box">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            mollitia.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            eos reiciendis tempora maxime cupiditate animi magni, possimus
+            pariatur veniam ad. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde deserunt reiciendis, quae, quia veritatis
+            maxime magni modi nulla obcaecati necessitatibus deleniti,
+            dignissimos odio ea distinctio quo cumque illo animi voluptas?
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

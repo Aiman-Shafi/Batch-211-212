@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+  </head>
+  <style>
+    .container {
+      background-color: antiquewhite;
+      border: 2px solid brown;
+      padding: 10px;
+      height: 500px;
+    }
+
+    .box {
+      width: 160px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-1 {
+      background-color: green;
+    }
+
+    .box-3 {
+      background-color: blue;
+    }
+
+    .flex-container {
+      border: 2px solid green;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      /* align-items: flex-start; */
+      /* flex-direction: column; */
+      /* gap: 20px; */
+      justify-content: space-around;
+      /* align-items: flex-start; */
+      /* flex-direction: column-reverse;
+      flex-direction: row-reverse;
+      flex-direction: column; */
+      /* flex-direction: row; by default  */
+      /* justify-content: flex-end; / center / flex-start */
+      /* justify-content: space-between; / space-around / space-evenly  */
+      /* align-items: flex-start; // center // flex-start */
+      /* flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: flex-end; */
+    }
+
+    .box-1 {
+      /* flex-grow: 3; */
+      /* flex-basis: 100%; */
+      order: 3;
+      /* align-self: flex-end; */
+      /* flex-shrink: 0; */
+    }
+
+    .box-2 {
+      /* flex-grow: 1; */
+      /* flex-basis: 100%; */
+      order: 1;
+      /* align-self: center; */
+      /* flex-shrink: 0; */
+    }
+
+    .box-3 {
+      /* flex-grow: 2; */
+      /* flex-basis: 100%; */
+      order: 2;
+      /* flex-shrink: 0; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="flex-container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+      </div>
+    </div>
+  </body>
+</html>

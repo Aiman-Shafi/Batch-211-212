@@ -1,0 +1,47 @@
+h2 {
+  color: rgb(55, 0, 255);
+  font-size: 40px;
+}
+
+p {
+  background-color: rgb(224, 224, 224);
+  font-size: 20px;
+  color: rgb(62, 87, 79);
+}
+
+a {
+  color: pink !important;
+}
+
+#heading {
+  background-color: green;
+  color: aqua;
+}
+
+.heading {
+  color: rgb(231, 6, 6);
+  font-size: 50px;
+  background-color: pink;
+}
+
+.heading2 {
+  color: green;
+}
+
+.heading {
+  color: rgb(229, 8, 8) !important;
+  font-size: 50px;
+}
+/* 
+.lorem {
+  background-color: aqua;
+} */
+
+/* .heading span {
+  color: red;
+  background-color: black;
+} */
+
+.heading-span {
+  color: green;
+}
