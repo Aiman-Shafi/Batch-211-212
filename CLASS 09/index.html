@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        height: 600px;
+        background-color: aqua;
+        animation-name: colorChange;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+
+      .box {
+        border: 3px solid gray;
+        padding: 20px;
+        transition: all 0.5s linear;
+        /* transform: matrix(1, 0.1, -0.7, 1, 30, 50); */
+        /* transform: translate(-80px, -100px); */
+        /* transform: translateY(-300px); */
+        /* transform: rotate(-3deg); */
+        /* position: absolute; */
+        /* top: 30px;
+        left: 50px; */
+      }
+
+      .box:nth-child(even) {
+        /* transform: scale(1.1); */
+        background-color: black;
+        color: white;
+        animation: moveIn 2s linear 3 alternate forwards;
+      }
+      .box:nth-child(odd) {
+        /* transform: skewY(-20deg); */
+        /* transform: rotate(10deg); */
+        background-color: blueviolet;
+        color: white;
+      }
+
+      .box:hover {
+        transform: translateY(-10px);
+        background-color: greenyellow;
+        color: black;
+      }
+
+      @keyframes moveIn {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      /* @keyframes colorChange {
+        0% {
+          background-color: pink;
+        }
+        30% {
+          background-color: red;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      } */
+    </style>
+    <section class="container">
+      <!-- <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, porro
+          eligendi dolorem temporibus a tempora, recusandae ipsum eveniet,
+          cumque repudiandae molestiae? Consectetur recusandae debitis maxime
+          deserunt, nam magni quasi, dolores aut eius adipisci tempora,
+          assumenda repellat necessitatibus? Omnis assumenda pariatur optio vel
+          sit porro error ab distinctio veritatis atque! Debitis.
+        </p>
+      </div> -->
+      <div class="box">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          distinctio repellat, harum perspiciatis amet aut quod consequatur
+          omnis ratione facere rerum impedit, dignissimos enim!
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="box">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          distinctio repellat, harum perspiciatis amet aut quod consequatur
+          omnis ratione facere rerum impedit, dignissimos enim!
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="box">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          distinctio repellat, harum perspiciatis amet aut quod consequatur
+          omnis ratione facere rerum impedit, dignissimos enim!
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+    </section>
+  </body>
+</html>

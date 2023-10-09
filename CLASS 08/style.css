@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+
+/* :root {
+  --primary-color: #0a8270;
+  --bg-color: #f6f3eb;
+  --heading-color: #314d4a;
+  --text-color: #646d6c;
+  --white-color: #ffffff;
+  --primary-font: "DM Sans", sans-serif;
+} */
+
+/* Global Styles Start  */
+
+html {
+  --primary-color: #0a8270;
+  --bg-color: #f6f3eb;
+  --heading-color: #314d4a;
+  --text-color: #646d6c;
+  --white-color: #ffffff;
+  --primary-font: "DM Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+/* default font size: 16px */
+/* rem => 1 rem => 10px  */
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+img {
+  max-width: 100%;
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: rotate(4deg);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 7rem;
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 8rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.6rem;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.primary-btn {
+  padding: 1.5rem 3.8rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: inline-block;
+}
+
+/* Global Styles End  */
+
+/* Header Styles Start  */
+
+header {
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+  font-size: 3rem;
+}
+
+.header-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo h2 {
+  font-size: 2.8rem;
+  color: var(--heading-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 4rem;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.bx-menu-alt-right {
+  display: none;
+}
+
+/* Header Styles End  */
+
+/* Hero Section Styles Start  */
+.hero {
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+
+.hero-content {
+  max-width: 490px;
+}
+
+.hero-content h2 {
+  font-size: 6.4rem;
+}
+
+.hero-content p {
+  margin: 3rem 0;
+}
+
+/* Hero Section Styles End  */
+
+/* Project Section Styles Start  */
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 7rem;
+}
+
+.project-header-content {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-container-one,
+.project-container-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-container-one {
+  margin-bottom: 7rem;
+}
+
+.project-1 {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-2 {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-4 {
+  /* transform: translateY(-200px); */
+  margin-top: -20rem;
+}
+/* Project Section Styles End  */
+
+/* Counter Section Styles Start  */
+
+.stats {
+  background-color: var(--primary-color);
+  padding: 4rem 0;
+  /* margin-bottom: 100rem; */
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.counter h3 {
+  font-size: 4rem;
+  color: var(--white-color);
+}
+
+.counter p {
+  color: var(--white-color);
+}
+
+/* Counter Section Styles End  */
+
+/* Client Section Styles Start  */
+
+.client-testimonial {
+  padding: 12rem 0;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  gap: 4rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+.testimonial {
+  border: 1px solid #0a82704c;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+  /* width: 350px; */
+  /* flex-shrink: 0; */
+}
+
+.testimonial:hover {
+  transform: rotate(2deg);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border: 1px solid var(--text-color); */
+}
+
+.testimonial-header p {
+  color: var(--text-color);
+}
+
+.testimonial-header h3 {
+  /* color: var(--text-color); */
+  font-size: 1.8rem;
+}
+
+.testimonial-user-designation {
+  color: var(--primary-color);
+}
+
+.testimonial-content {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Client Section Styles End  */
+
+/* max-width -> desktop -> mobile
+min-width -> mobile -> desktop */
+/* @media (max-width: 900px) {
+  .hero {
+    background-color: rgb(33, 28, 28);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-color: red;
+  }
+} */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+  nav {
+    display: none;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .hero-img {
+    order: 1;
+  }
+  .hero-content {
+    order: 2;
+  }
+  .hero-img img {
+    max-width: 100%;
+  }
+  .bx-menu-alt-right {
+    font-size: 4.6rem;
+    display: inline-block;
+    color: var(--heading-color);
+  }
+  .header-mobile-area {
+    display: flex;
+    align-items: center;
+  }
+  .header-mobile-area .primary-btn {
+    display: none;
+  }
+}
+
+/* @media (min-width: 500px) {
+  .hero {
+    background-color: red;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background-color: black;
+  }
+} */
+
+@media (max-width: 700px) {
+  .projects-header {
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .project-4 {
+    margin: 0;
+  }
+
+  .project-container-one,
+  .project-container-two {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .counter-wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .testimonial-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    background-color: black;
+  }
+}
+
+/* @media (max-width: 500px) {
+  .hero {
+    background-color: rgb(95, 64, 219);
+  }
+} */
