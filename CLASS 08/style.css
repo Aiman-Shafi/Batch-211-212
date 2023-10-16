@@ -139,6 +139,7 @@ nav ul {
 /* Header Styles End  */
 
 /* Hero Section Styles Start  */
+
 .hero {
   padding: 6rem 0;
   background-color: var(--bg-color);
@@ -216,8 +217,7 @@ nav ul {
 /* Project Section Styles End  */
 
 /* Counter Section Styles Start  */
-
-.stats {
+ctrl + j .stats {
   background-color: var(--primary-color);
   padding: 4rem 0;
   /* margin-bottom: 100rem; */

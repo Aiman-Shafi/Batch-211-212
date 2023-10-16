@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .blog-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 40px;
+        padding: 20px;
+      }
+
+      .blog {
+        padding: 100px 0;
+      }
+
+      .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .post {
+        border: 2px solid gray;
+        padding: 20px;
+      }
+
+      .post img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .post-title {
+        margin: 20px 0;
+      }
+
+      .sidebar-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .sidebar-post {
+        display: flex;
+        gap: 10px;
+      }
+
+      /* .sidebar-post > * {
+        flex-basis: 100%;
+      } */
+
+      .sidebar-post-img {
+        width: 140px;
+        height: 90px;
+        object-fit: cover;
+      }
+
+      .sidebar-post-btn {
+        display: inline-block;
+        /* margin-top: 10px; */
+      }
+
+      .sidebar-post-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      @media (max-width: 1000px) {
+        .blog-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <main>
+      <section class="blog">
+        <div class="container blog-container">
+          <div class="blog-posts">
+            <h2>blogs</h2>
+            <div class="blog-grid">
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+              <div class="post">
+                <img src="images/curry.png" alt="curry" />
+                <p>Date: 16/09/2021</p>
+                <h3 class="post-title">
+                  19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                </h3>
+                <p class="post-excerpt">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  vel placeat error eum inventore unde delectus, cum, soluta
+                  quibusdam ad repellat velit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <aside>
+            <h2>sidebar</h2>
+            <div class="sidebar-posts">
+              <div class="sidebar-post">
+                <img
+                  src="images/curry.png"
+                  alt="curry"
+                  class="sidebar-post-img"
+                />
+                <div class="sidebar-post-content">
+                  <div class="sidebar-post-title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+                  <a href="#" class="sidebar-post-btn">Read More</a>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img
+                  src="images/curry.png"
+                  alt="curry"
+                  class="sidebar-post-img"
+                />
+                <div class="sidebar-post-content">
+                  <div class="sidebar-post-title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+                  <a href="#" class="sidebar-post-btn">Read More</a>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img
+                  src="images/curry.png"
+                  alt="curry"
+                  class="sidebar-post-img"
+                />
+                <div class="sidebar-post-content">
+                  <div class="sidebar-post-title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+                  <a href="#" class="sidebar-post-btn">Read More</a>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img
+                  src="images/curry.png"
+                  alt="curry"
+                  class="sidebar-post-img"
+                />
+                <div class="sidebar-post-content">
+                  <div class="sidebar-post-title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+                  <a href="#" class="sidebar-post-btn">Read More</a>
+                </div>
+              </div>
+              <div class="sidebar-post">
+                <img
+                  src="images/curry.png"
+                  alt="curry"
+                  class="sidebar-post-img"
+                />
+                <div class="sidebar-post-content">
+                  <div class="sidebar-post-title">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                  </div>
+                  <a href="#" class="sidebar-post-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
