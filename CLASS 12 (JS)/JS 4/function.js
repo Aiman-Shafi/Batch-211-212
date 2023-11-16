@@ -23,6 +23,3 @@ function randomNumber(num) {
 
 randomNumber(100 + 10);
 
-// Solve the problem with Javascript  to find the maximum between two numbers. (Hint: take 2 variables and find the maximum number between them)
-// Solve the problem with Javascript  to check whether a number is negative, positive or zero. (take single variable and check using if esle condition)
-// Solve the problem with Javascript  to check whether a number is divisible by 10 or not. (take single variable and check using if esle condition)
