@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: yellow;
+      color: black;
+      text-align: center;
+      font-size: 3rem;
+    }
+  </style>
+  <body>
+    <div>
+      <h2 id="text">Javascript DOM</h2>
+      <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam
+        quibusdam perspiciatis aperiam deleniti culpa nihil provident placeat
+        temporibus eum sint vitae, hic repellat veritatis quis rem voluptates
+        praesentium perferendis.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates
+        placeat. Veniam dignissimos enim nisi magni, sint quae sit officia!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam?
+      </p>
+    </div>
+    <h3 class="heading">Lorem, ipsum dolor.</h3>
+    <h4 class="heading">Lorem ipsum dolor sit amet.</h4>
+    <h2 class="heading">Lorem dolor sit amet.</h2>
+    <script>
+      // Getting elements by ID
+      // document.getElementById("text");
+      // let heading = document.getElementById("text");
+      // console.log(heading);
+      // heading.innerHTML = "Document Object Model";
+      document.getElementById("text").innerHTML = "Document Object Model";
+      document.getElementById("text").style.color = "blue";
+      document.getElementById("text").style.fontSize = "100px";
+
+      let paragraph = document.getElementById("paragraph");
+
+      paragraph.style.fontSize = "70px";
+      paragraph.style.backgroundColor = "black";
+      paragraph.style.color = "white";
+      paragraph.style.padding = "50px 30px";
+      paragraph.innerText = "We are learning DOM Manupulation";
+      //output: <h2 id=​"text">​Javascript DOM​</h2>​
+
+      // get element by query (only the first element which matches the condition)
+      let h3 = document.querySelector(".heading");
+      h3.style.color = "red";
+      // output: <h3 class=​"heading">​Lorem, ipsum dolor.​</h3>​
+
+      // get element by tagName
+      document.getElementsByTagName("h2");
+
+      // get element class name
+      document.getElementsByClassName("heading");
+      document.getElementsByClassName("heading")[1].style.color = "green";
+
+      // get element by query selector all
+      document.querySelectorAll("p");
+      document.querySelectorAll("p")[2].background = "red";
+    </script>
+  </body>
+</html>

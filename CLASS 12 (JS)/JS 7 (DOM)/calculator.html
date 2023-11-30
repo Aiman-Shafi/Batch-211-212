@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator JS</title>
+  </head>
+  <style>
+    body {
+      background-color: yellow;
+      color: black;
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Roboto", sans-serif;
+    }
+
+    input {
+      font-size: 2rem;
+      padding: 1rem;
+      border: 0.5rem solid black;
+    }
+
+    .buttons {
+      margin-top: 3rem;
+    }
+    button {
+      font-size: 2rem;
+      padding: 1rem;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <section>
+      <h2 id="heading" style="margin-top: 150px; font-size: 4rem">
+        JAVASCRIPT BASIC CALCULATOR
+      </h2>
+      <div class="input">
+        <input type="number" id="inputOne" placeholder="Enter Value 1" />
+        <input type="number" id="inputTwo" placeholder="Enter Value 2" />
+      </div>
+      <div class="buttons">
+        <button id="add" onclick="add()">ADD +</button>
+        <button id="subtract" onclick="subtract()">SUBTRACT -</button>
+        <button id="division" onclick="division()">DIVISION /</button>
+        <button id="multiply" onclick="multiply()">MULTIPLICATION X</button>
+      </div>
+      <div class="result">
+        <h2>Result: <span id="result">0</span></h2>
+      </div>
+    </section>
+
+    <script>
+      // step 01 - select all input fields
+      const inputOne = document.getElementById("inputOne");
+      const inputTwo = document.getElementById("inputTwo");
+      const result = document.getElementById("result");
+
+      const heading = document.getElementById("heading");
+      // step 02 - take two input value and find the sum of two values
+      console.log(inputOne.value);
+      console.log(inputTwo.value);
+      console.log(heading.innerHTML);
+
+      //   console.log(add);
+
+      function add() {
+        if (inputOne.value && inputTwo.value) {
+          let add = parseInt(inputOne.value) + parseInt(inputTwo.value);
+          // console.log(add);
+          result.innerHTML = add;
+          clearInput();
+        } else {
+          alert("please enter all the values!");
+        }
+      }
+
+      function subtract() {
+        if (inputOne.value && inputTwo.value) {
+          let subtract = parseInt(inputOne.value) - parseInt(inputTwo.value);
+          // console.log(add);
+          result.innerHTML = subtract;
+          clearInput();
+        } else {
+          alert("please enter all the values!");
+        }
+      }
+
+      function division() {
+        if (inputOne.value && inputTwo.value) {
+          let division = parseInt(inputOne.value) / parseInt(inputTwo.value);
+          result.innerHTML = division.toFixed(2);
+          clearInput();
+        } else {
+          alert("please enter all the values!");
+        }
+      }
+
+      function multiply() {
+        if (inputOne.value && inputTwo.value) {
+          let multiply = parseInt(inputOne.value) * parseInt(inputTwo.value);
+          result.innerHTML = multiply;
+          clearInput();
+        } else {
+          alert("please enter all the values!");
+        }
+      }
+
+      function clearInput() {
+        inputOne.value = "";
+        inputTwo.value = "";
+      }
+    </script>
+  </body>
+</html>

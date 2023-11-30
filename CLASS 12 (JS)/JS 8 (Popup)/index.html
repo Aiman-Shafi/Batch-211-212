@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    button {
+      border: none;
+      padding: 20px 40px;
+      font-size: 40px;
+      background-color: black;
+      color: white;
+    }
+
+    button:hover {
+      background-color: yellowgreen;
+      color: black;
+    }
+
+    .popup-body {
+      padding: 30px;
+      width: 400px;
+      height: 160px;
+      top: 0;
+      left: 0;
+      background-color: rgb(221, 221, 221);
+      border: 4px solid black;
+      text-align: center;
+    }
+
+    .popup {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(27, 27, 27, 0.719);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    h2 {
+      font-size: 6vw;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    code {
+      font-size: 30px;
+      background-color: yellow;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .heading {
+      color: red;
+    }
+
+    .color {
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <div class="allButton">
+      <h2 class="color">SEE THE LATEST DEAL!</h2>
+      <button class="btn">Click to View Offer</button>
+      <!-- <button class="btn2">Click to change color</button> -->
+    </div>
+
+    <div class="popup">
+      <div class="popup-body">
+        <h3>Use the below coupon in the checkout!</h3>
+        <code>"OFFER20"</code>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let popup = document.querySelector(".popup");
+    let button = document.querySelector(".btn");
+    let button2 = document.querySelector(".btn2");
+    let body = document.querySelector("body");
+
+    function openPopup() {
+      //   console.log("popup is triggred!!");
+      //   //   console.log(popup);
+      popup.style.display = "flex";
+    }
+
+    function closePopup() {
+      popup.style.display = "none";
+    }
+
+    button.addEventListener("click", openPopup);
+
+    body.addEventListener("click", (event) => {
+      // if(e.target.classList)
+      //   console.log(e.target.classList.value);
+      if (event.target.classList.value === "popup") {
+        closePopup();
+      }
+    });
+    // popup.addEventListener("click", function () {
+    //   popup.style.display = "none";
+    // });
+
+    // button2.addEventListener("click", (e) => {
+    //   console.log(e.target.classList);
+    //   document.querySelector("h2").classList.add("heading");
+    //   document.querySelector("h2").classList.remove("color");
+    // });
+  </script>
+</html>
