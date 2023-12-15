@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      background-color: yellow;
+      color: black;
+    }
+
+    input {
+      padding: 10px 20px;
+      font-size: 24px;
+    }
+
+    .form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    li {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .list {
+      margin-top: 10px;
+    }
+
+    .list-item {
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+  </style>
+  <body>
+    <h2>C(create) R(read) U(update) D(delete) Operation</h2>
+    <div class="form">
+      <form id="form" class="inputForm">
+        <input type="text" id="input" placeholder="Add a item! 🍰" />
+        <input type="submit" value="Add Item ➕" id="submit" />
+      </form>
+      <!-- <input type="text" value="test..." readonly /> -->
+      <!-- <input type="text" id="input" placeholder="Add a item! 🍰" />
+      <input type="submit" value="Add Item ➕" id="submit" /> -->
+      <div id="bazar-list">
+        <div class="list">
+          <!-- <input type="text" />
+          <button>Delete</button>
+          <button>Edit</button> -->
+        </div>
+        <!-- <li>Alu - 2kg <button>Delete 🚮</button></li>
+        <li>peyaj - 2kg</li> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
