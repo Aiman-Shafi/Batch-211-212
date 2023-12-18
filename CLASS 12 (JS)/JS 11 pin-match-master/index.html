@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input class="form-control generatedPin" type="text" placeholder="Generate 4 digit pin" readonly>
+                    <button class="generate-btn" >Generate Pin</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <input class="form-control showValue" type="text" readonly>
+                    <div class="numbers">
+                        <div class="calc-body">
+                            <div class="calc-button-row">
+                              <div class="button" onclick="inputValue(this.innerText)">7</div>
+                              <div class="button" onclick="inputValue(this.innerText)">8</div>
+                              <div class="button" onclick="inputValue(this.innerText)">9</div>
+                            </div>
+                            <div class="calc-row">
+                              <div class="button" onclick="inputValue(this.innerText)">4</div>
+                              <div class="button" onclick="inputValue(this.innerText)">5</div>
+                              <div class="button" onclick="inputValue(this.innerText)" >6</div>
+                            </div>
+                            <div class="calc-ow">
+                              <div class="button" onclick="inputValue(this.innerText)">1</div>
+                              <div class="button" onclick="inputValue(this.innerText)">2</div>
+                              <div class="button" onclick="inputValue(this.innerText)" >3</div>
+                            </div>
+                            <div class="calc-row">
+                                <div class="button" id="removeBtn"> < </div>
+                                <div class="button" onclick="inputValue(this.innerText)">0</div>
+                                <div class="button" onclick="inputValue(this.innerText)">C</div>
+                            </div>
+                            <div>
+                                <button type="submit" class="submit-btn" >Submit</button>
+                                <p class="action-left"><span id="tryLeft"> 3 </span> try left</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section">
+            <p class="notify wrong-pin">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify correct-pin">✅ Pin Matched... Secret door is opening for you</p>
+        </div>
+           </div>
+
+    <script src="solution.js"></script>
+</body>
+</html>
