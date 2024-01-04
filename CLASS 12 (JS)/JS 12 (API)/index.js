@@ -44,4 +44,5 @@ function displayQuote(quote) {
 }
 
 document.getElementById("generate").addEventListener("click", fetchQuote);
+
 fetchQuote();

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.popup {
+  width: 450px;
+  background: #fff;
+  border: 1px solid gray;
+}
+.popup :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+}
+.popup .picker {
+  padding: 30px 0;
+  background: #ffeeee;
+  justify-content: center;
+}
+.picker #color-picker {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: rgb(235, 70, 20);
+  transition: 0.3s ease;
+}
+#color-picker:hover {
+  background: #f05353;
+}
+.picked-colors {
+  margin: 10px 15px;
+}
+.picked-colors header {
+  justify-content: space-between;
+}
+.title {
+  font-size: 1rem;
+}
+.clear-all {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #f05353;
+}
+.clear-all:hover {
+  color: rgb(235, 70, 20);
+}
+.picked-colors.hide {
+  display: none;
+}
+.picked-colors .all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0;
+}
+.all-colors .color {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 4);
+}
+.all-colors .rect {
+  height: 21px;
+  width: 21px;
+  display: block;
+  margin-right: 8px;
+  border-radius: 5px;
+  background-color: red;
+  border: 1px solid lightgrey;
+}
+.all-colors .color span {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
